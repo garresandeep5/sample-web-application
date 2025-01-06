@@ -4,8 +4,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: nginx-web-app
+        TaskDefinition: arn:aws:ecs:ap-south-1:266735821233:task-definition/poc-td:4
         LoadBalancerInfo:
-          ContainerName: nginx-web-app
+          ContainerName: my-cont
           ContainerPort: 80
-
