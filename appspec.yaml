@@ -1,0 +1,11 @@
+
+version: 1
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: nginx-web-app
+        LoadBalancerInfo:
+          ContainerName: nginx-web-app
+          ContainerPort: 80
+
